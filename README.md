@@ -22,11 +22,11 @@ The FIFO module is a variable-length buffer with a varying data-width. It also h
 Applications:
 The main uses of FIFO are as follows
 
-Used to buffer data transfers.
-Used in circular buffers and FIR filters.
-FIFO memory chips.
-Increase BW and prevent data loss in high-speed communication.
-FIFOs find use in set-top box for HDTV/IPTV.
+* Used to buffer data transfers.
+* Used in circular buffers and FIR filters.
+* FIFO memory chips.
+* Increase bandwidth and prevent data loss in high-speed communication.
+* FIFOs find use in set-top box for HDTV/IPTV.
 
 ## RTL Design and Synthesis
 ## Icarus Verilog (iverilog) & Yosys Installation on Ubuntu
