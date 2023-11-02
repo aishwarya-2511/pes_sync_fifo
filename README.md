@@ -14,7 +14,7 @@
 * [OpenLane flow](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#openlane-flow)
     * [Installation of ngspice, magic and OpenLane](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#installation-of-ngspice-magic-and-openlane)
     * [Synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#synthesis-1)
-    * Floorplan
+    * [Floorplan](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#floorplan)
     * Placement
     * Clock tree synthesis
     * Routing
@@ -257,7 +257,30 @@ detailed view of directory structure:
 
 
 ## Synthesis
+Type ```run_synthesis```
+![synthesis1a](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/c48ccd40-6453-4e07-b051-36ed10d90483)
+
+![synthesis1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/149e3b8c-bcd0-4878-bc7f-638f32f34030)
 
 
+![pre stat](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/0a8ac58c-2a28-402c-b530-fd0f5b779a15)
+![dff stat](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/d5f8b6f4-d8b9-471d-a56f-0449bf74de4a)
+![4stat](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/b473ed6c-71e1-4cb6-8888-27a25da04812)
+![minmax](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/43033f09-18b6-4b92-81a0-df030b92bd50)
+
+## Floorplan
+Type ```run_floorplan```
+![floorplann](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/d30fa406-8572-46ae-92d0-2439447b3763)
+
+Die and core area:
+![diearea](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/3bbeacf3-4996-43f3-9962-c32972ab1a25)
+![corearea](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/2f18cfec-1b99-4b28-89f7-63f41fe5b6f0)
+
+To open in magic tool type:
+``` magic -T /home/Desktop/work/tools/openlane-working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged_unpadded.lef def spm.floorplan.def &```
+
+![magicfloorplan](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/411f11ad-0e5a-4f52-af19-dfc8d2df4ad7)
+
+![zoom1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/df768ea9-4e10-4fbf-b761-945536eba19a)
 
 
