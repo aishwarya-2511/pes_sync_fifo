@@ -11,6 +11,13 @@
     * [RTL Pre-Simulation](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#rtl-pre-simulation)
     * [Synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#synthesis)
     * [GLS Post-simulation](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#gls-post-simulation)
+* [OpenLane flow](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#openlane-flow)
+    * [Installation of ngspice, magic and OpenLane](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#installation-of-ngspice-magic-and-openlane)
+    * [Synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#synthesis-1)
+    * Floorplan
+    * Placement
+    * Clock tree synthesis
+    * Routing
 ## Introduction
 
 FIFO is an approach for handling program work requests from queues so that the oldest request is processed first. In the hardware domain it stores data in an array of flops in one clock cycle and can give the same data in another cycle following FIFO logic.
@@ -164,6 +171,7 @@ To see waveform:
 
 The synthesis and simulation waveform is matching
 
+## OpenLane flow
 
 ## Installation of ngspice, magic and OpenLane
 
@@ -241,11 +249,14 @@ detailed view of directory structure:
 * Type ```make mount```
 * Type ./flow.tcl -interactive in openlane directory
 
-<img width="584" alt="Screenshot 2023-11-02 230154" src="https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/a6659a18-62b4-4bc9-a1d7-f93dfd5b92b0">
+  <img width="584" alt="Screenshot 2023-11-02 230154" src="https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/a6659a18-62b4-4bc9-a1d7-f93dfd5b92b0">
 
 * Type ```prep -design pes-sync_fifo```
+  
 ![prepdesign](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/1fe4bd2b-f6df-47f7-a0dd-2585cb848277)
 
+
+## Synthesis
 
 
 
