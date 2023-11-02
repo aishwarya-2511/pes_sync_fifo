@@ -163,3 +163,90 @@ To see waveform:
 ![Alt text](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/screenshots/Screenshot%202023-10-18%20182001.png)
 
 The synthesis and simulation waveform is matching
+
+
+## Installation of ngspice, magic and OpenLane
+
+* Download the tarball from https://sourceforge.net/projects/ngspice/files/ 
+### ngspice
+* open terminal and type the following commands
+```bash
+cd $HOME
+sudo apt-get install libxaw7-dev
+tar -zxvf ngspice-41.tar.gz
+cd ngspice-41
+mkdir release
+cd release
+../configure  --with-x --with-readline=yes --disable-debug
+sudo make
+sudo make install
+```
+### magic
+```bash
+sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+./configure
+sudo make
+sudo make install
+```
+### OpenLane
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install -y build-essential python3 python3-venv python3-pip make git
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+sudo docker run hello-world
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo reboot 
+```
+
+### PDKs and Tools
+```bash 
+cd $HOME
+git clone https://github.com/The-OpenROAD-Project/OpenLane
+cd OpenLane
+make
+make test
+```
+
+### To invoke OpenLane
+* Go to "designs" folder under OpenLane
+* create a folder - 'pes_sync_fifo'
+* create config.json file by running ``` ./flow.tcl -design pes_cache_compression -init_design_config -add_to_designs ```
+* create a folder src and add your design file & these files: sky130_fd_sc_hd_fast.lib, sky130_fd_sc_hd_slow.lib, sky130_fd_sc_hd_typical.lib 
+
+detailed view of directory structure:
+![detailed_dir](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ade3bcdf-d417-44b8-93a9-c185bb7a970f)
+
+
+* in the main openlane folder create folder 'pdks' and paste the file 'sky130_fd_sc_hd.v'
+![pdks](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/3e5525c8-8a89-42fc-84d4-bd692f2a653a)
+
+* Type ```make mount```
+* Type ./flow.tcl -interactive in openlane directory
+
+<img width="584" alt="Screenshot 2023-11-02 230154" src="https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/a6659a18-62b4-4bc9-a1d7-f93dfd5b92b0">
+
+* Type ```prep -design pes-sync_fifo```
+![prepdesign](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/1fe4bd2b-f6df-47f7-a0dd-2585cb848277)
+
+
+
+
+
