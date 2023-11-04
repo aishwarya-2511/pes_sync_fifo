@@ -262,6 +262,9 @@ Type ```run_synthesis```
 
 ![synthesis1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/149e3b8c-bcd0-4878-bc7f-638f32f34030)
 
+Synthesis report:
+
+![snythreport1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ad4a50ac-6ea0-4677-8291-73364b59ccc3)
 
 ![pre stat](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/0a8ac58c-2a28-402c-b530-fd0f5b779a15)
 ![dff stat](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/d5f8b6f4-d8b9-471d-a56f-0449bf74de4a)
@@ -273,8 +276,8 @@ Type ```run_floorplan```
 ![floorplann](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/d30fa406-8572-46ae-92d0-2439447b3763)
 
 Die and core area:
-![diearea](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/3bbeacf3-4996-43f3-9962-c32972ab1a25)
-![corearea](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/2f18cfec-1b99-4b28-89f7-63f41fe5b6f0)
+![dieandcorearea](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/98ade249-c035-4f40-8940-80620521386e)
+
 
 To open in magic tool type:
 ``` magic -T /home/Desktop/work/tools/openlane-working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged_unpadded.lef def spm.floorplan.def &```
@@ -282,5 +285,61 @@ To open in magic tool type:
 ![magicfloorplan](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/411f11ad-0e5a-4f52-af19-dfc8d2df4ad7)
 
 ![zoom1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/df768ea9-4e10-4fbf-b761-945536eba19a)
+
+spm.floorplan.def.png :
+
+![spmfloorplan](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/077ab423-b998-4342-85a5-f4edc5ace594)
+
+
+## Placement
+Type ```run_placement```
+
+
+![runplacemnt](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/f7c07433-d186-4801-8384-77e50e5fff69)
+![plcmt2](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/5c14a2aa-940e-4cd9-9286-6bbf5e97cb48)
+![plcmt3](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/05f043d3-cb7a-4bf7-9b2c-423128f13ed1)
+
+To open in magic tool type:
+``` magic -T /home/Desktop/work/tools/openlane-working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged_unpadded.lef def spm.placement.def &```
+
+spm.floorplan.def.png :
+
+![spmplcmt](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/75e3172b-56ec-4b75-b781-ea0f2097b405)
+
+
+## Clock tree synthesis
+
+Type ```run_cts```
+
+![runcts](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/484187e6-75bf-436c-9b83-f2d5cec1f798)
+![cts1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/798f232e-5ccf-4e55-b081-fdaad5d0251a)
+![cts2](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/d06b4386-d22f-436b-bfae-05a750c7a26d)
+![cts3](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/6c14dd78-b958-4df3-9d00-f4216ce681b0)
+
+spm.cts.def.png :
+
+![spmcts](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/2da9d222-7d1a-4fbd-a257-5c443f117d96)
+
+spm.cts.def:
+![ctsdef1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/e765a1ae-9421-4d2e-9ccb-984117ea6674)
+![ctsdef2](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/06a39ca4-2399-45b2-a3bb-77cf52bf668d)
+![ctsdef4](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/948ec101-5689-4712-ba44-cc31b65c9bac)
+![ctsdef5](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/a7d09368-a93f-472b-b927-8b149a448ad2)
+![cstdef7](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ddfe3cce-08ab-4afa-b242-e98f720ca756)
+![ctsdef8](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/9a95a4a7-2042-4dc5-a5e3-6489e45b1607)
+![ctsdef10](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/407df770-412d-4e11-99a7-6002f19454df)
+
+
+## Routing
+Type ```run_routing```
+![runrouting](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/516d14d8-36c8-4d47-9455-efb95d64d119)
+
+
+![rout2](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/f48c78a4-35c0-4114-babd-55bccf60f315)
+![rout3](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/befde2f9-5162-440d-8429-963d8c694e02)
+![rout4](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ca317328-e640-4ab9-aa5f-08abcf371220)
+![rout5-iter0](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/44cdcc62-f090-45aa-9aac-ad7bb8f8952a)
+![rout6-iter1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ef00ee23-6e2d-4b09-aca0-816e34075115)
+![rout](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/aada95b4-0ea9-4df8-a55d-d49be2e1685c)
 
 
