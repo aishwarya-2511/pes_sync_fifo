@@ -15,7 +15,7 @@
     * [Installation of ngspice, magic and OpenLane](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#installation-of-ngspice-magic-and-openlane)
     * [Synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#synthesis-1)
     * [Floorplan](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#floorplan)
-    * Placement
+    * [Placement](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/README.md#placement)
     * Clock tree synthesis
     * Routing
 ## Introduction
