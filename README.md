@@ -348,4 +348,14 @@ Iteration 1:
 ![rout6-iter1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ef00ee23-6e2d-4b09-aca0-816e34075115)
 ![rout](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/aada95b4-0ea9-4df8-a55d-d49be2e1685c)
 
+Power report:
 
+
+<img width="473" alt="Screenshot 2023-11-05 231906" src="https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/8007bec1-0476-4120-931a-adba5f481497">
+
+Statistics:
+* Area = 489.12 um2
+* Internal Power = 2.08e-06 W
+* Switching Power = 5.18e-07 W
+* Leakage Power = 8.24e-11 W
+* Total Power = 2.59e-06 W
