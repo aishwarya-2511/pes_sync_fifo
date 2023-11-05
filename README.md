@@ -16,7 +16,7 @@
     * [Synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#synthesis-1)
     * [Floorplan](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#floorplan)
     * [Placement](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/README.md#placement)
-    * Clock tree synthesis
+    * [Clock tree synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/README.md#clock-tree-synthesis)
     * Routing
 ## Introduction
 
