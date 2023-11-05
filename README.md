@@ -338,7 +338,13 @@ Type ```run_routing```
 ![rout2](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/f48c78a4-35c0-4114-babd-55bccf60f315)
 ![rout3](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/befde2f9-5162-440d-8429-963d8c694e02)
 ![rout4](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ca317328-e640-4ab9-aa5f-08abcf371220)
+
+Various iterations:
+
+Iteration 0:
 ![rout5-iter0](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/44cdcc62-f090-45aa-9aac-ad7bb8f8952a)
+
+Iteration 1:
 ![rout6-iter1](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/ef00ee23-6e2d-4b09-aca0-816e34075115)
 ![rout](https://github.com/aishwarya-2511/pes_sync_fifo/assets/97291384/aada95b4-0ea9-4df8-a55d-d49be2e1685c)
 
