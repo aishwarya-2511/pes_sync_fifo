@@ -17,7 +17,7 @@
     * [Floorplan](https://github.com/aishwarya-2511/pes_sync_fifo/edit/main/README.md#floorplan)
     * [Placement](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/README.md#placement)
     * [Clock tree synthesis](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/README.md#clock-tree-synthesis)
-    * Routing
+    * [Routing](https://github.com/aishwarya-2511/pes_sync_fifo/blob/main/README.md#routing)
 ## Introduction
 
 FIFO is an approach for handling program work requests from queues so that the oldest request is processed first. In the hardware domain it stores data in an array of flops in one clock cycle and can give the same data in another cycle following FIFO logic.
